@@ -6,7 +6,6 @@ App = {}
 
 App.puts = (error, stdout, stderr) ->
   #sys.puts(stdout)
-  return
 
 App.icon = "#{__dirname}/i/coffee.png"
 
