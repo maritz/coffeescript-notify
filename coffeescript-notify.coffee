@@ -11,7 +11,8 @@ App.icon = "#{__dirname}/i/coffee.png"
 
 App.notify = (title, message, type) ->
 	exec "notify-send  -i '#{__dirname}/i/coffee-#{type}.png' '#{title}' '#{message}'",App.puts 
-	console.log "#{message}"
+        # Go silent
+	# console.log "#{message}"
 	
 
 CoffeeScript.on 'failure', (error, task) ->
