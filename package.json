@@ -1,0 +1,18 @@
+{
+  "author": "Bozhidar Dryanovski <bozhidar.dryanovski@gmail.com>",
+  "name": "coffeescript-notify",
+  "description": "Coffee-Script notify tool for coffee based on the coffeescript-growl tool",
+  "version": "0.1.0",
+  "homepage": "http://github.com/bdryanovski/coffeescript-notify",
+  "keywords": "coffeescript, notify-send, notifications, ubuntu",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/bdryanovski/coffeescript-notify"
+  },
+  "main": "coffeescript-notify.js",
+  "engines": {
+    "node": ">= 0.4.8 < 0.5.0"
+  },
+  "dependencies": {},
+  "devDependencies": {}
+}
