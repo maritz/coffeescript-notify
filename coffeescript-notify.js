@@ -3,9 +3,7 @@ sys = require('sys');
 exec = require('child_process').exec;
 CoffeeScript = require("coffee-script");
 App = {};
-App.puts = function(error, stdout, stderr) {
-  return sys.puts(stdout);
-};
+App.puts = function(error, stdout, stderr) {};
 App.icon = "" + __dirname + "/i/coffee.png";
 App.notify = function(title, message, type) {
   return exec("notify-send  -i '" + __dirname + "/i/coffee-" + type + ".png' '" + title + "' '" + message + "'", App.puts);
