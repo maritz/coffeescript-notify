@@ -8,8 +8,6 @@ App.puts = (error, stdout, stderr) ->
   #sys.puts(stdout)
   return
 
-App.icon = "#{__dirname}/i/coffee.png"
-
 App.notify = (title, message, type) ->
 
 	exec "notify-send  -i '#{__dirname}/i/coffee-#{type}.png' '#{title}' '#{message}'",App.puts 
