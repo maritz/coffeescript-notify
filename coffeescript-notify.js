@@ -8,8 +8,7 @@ App.puts = function(error, stdout, stderr) {
 };
 App.icon = "" + __dirname + "/i/coffee.png";
 App.notify = function(title, message, type) {
-  exec("notify-send  -i '" + __dirname + "/i/coffee-" + type + ".png' '" + title + "' '" + message + "'", App.puts);
-  return console.log("" + message);
+  return exec("notify-send  -i '" + __dirname + "/i/coffee-" + type + ".png' '" + title + "' '" + message + "'", App.puts);
 };
 CoffeeScript.on('failure', function(error, task) {
   return App.notify('Coffee-Script faild:', "" + error, "error");
