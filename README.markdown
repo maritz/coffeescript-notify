@@ -12,3 +12,8 @@
 <p>Example:</p>
 
 <code>coffee -r coffeescript-notify  --watch --compile ~/sites/my_project/scripts.coffee</code>
+
+<p>This package will work only if you have notify-send</p>
+<p>If you are using Mac, you could try the <a href='https://github.com/wesbos/coffeescript-growl' target="_blank">coffeescript-growl</a></p>
+
+
