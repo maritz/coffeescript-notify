@@ -1,19 +1,16 @@
-sys = require('sys')
-exec = require('child_process').exec
+cp = require('child_process')
 CoffeeScript = require "coffee-script"
 
 App = {}
 
-App.puts = (error, stdout, stderr) ->
-  #sys.puts(stdout)
-  return
-
 App.notify = (title, message, type) ->
-
-	exec "notify-send  -i '#{__dirname}/i/coffee-#{type}.png' '#{title}' '#{message}'",App.puts 
-  # Go silent
-	# console.log "#{message}"
-	
+	args = []
+	timeout = if type == "success" then 1000 else 4000
+	args.push '-t', timeout
+	args.push '-i', "#{__dirname}/i/coffee-#{type}.png"
+	args.push "#{title}", "#{message}"
+	console.log 'notify-send', args.join(' ')
+	cp.spawn 'notify-send', args
 
 CoffeeScript.on 'failure', (error, task) ->
   App.notify 'Coffee-Script faild:',"#{error}","error" 

@@ -7,7 +7,7 @@
 <p>you must install notify-send which is a command line tool for sending messages to desktop env.</p>
 
 <p>use NPM to install:</p>
-<code>npm install coffeescript-notify</code>
+<code>npm install -g coffeescript-notify</code>
 
 <p>Example:</p>
 
