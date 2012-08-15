@@ -10,6 +10,9 @@
     "url": "http://github.com/bdryanovski/coffeescript-notify"
   },
   "main": "coffeescript-notify.js",
+  "bin": {
+    "coffee-notify": "./bin/coffee-notify.js"
+  },
   "engines": {
     "node": ">= 0.4.8"
   },
